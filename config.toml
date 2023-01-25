@@ -1,11 +1,9 @@
-# hugo server --minify --themesDir ... --baseURL=http://0.0.0.0:1313/theme/hugo-book/
-
 baseURL = '/'
 title = 'PowerShell in 100 days'
 theme = 'hugobook'
 
 # Book configuration
-disablePathToLower = true
+disablePathToLower = false
 enableGitInfo = true
 
 # Needed for mermaid/katex shortcodes
@@ -37,11 +35,10 @@ enableGitInfo = true
 #  weight = 3
 
 [menu]
-# [[menu.before]]
-#[[menu.after]]
-#  name = "Github"
-#  url = "https://github.com/alex-shpak/hugo-book"
-#  weight = 10
+[[menu.before]]
+  name = "in100Days Home"
+  url = "https://in100days.org"
+  weight = 10
 
 #[[menu.after]]
 #  name = "Hugo Themes"
@@ -109,11 +106,11 @@ enableGitInfo = true
   # (Optional, experimental, default false) Enables portable links and link checks in markdown pages.
   # Portable links meant to work with text editors and let you write markdown without {{< relref >}} shortcode
   # Theme will print warning if page referenced in markdown does not exists.
-  # BookPortableLinks = true
+  BookPortableLinks = true
 
   # /!\ This is an experimental feature, might be removed or changed at any time
   # (Optional, experimental, default false) Enables service worker that caches visited pages and resources for offline use.
-  # BookServiceWorker = true
+  BookServiceWorker = true
 
   # /!\ This is an experimental feature, might be removed or changed at any time
   # (Optional, experimental, default false) Enables a drop-down menu for translations only if a translation is present.
